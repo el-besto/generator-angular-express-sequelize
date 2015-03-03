@@ -2,8 +2,9 @@ A FORK OF [rayokota/generator-angular-express-sequelize](https://github.com/rayo
 
 1. Working with Postgres instead of sqlite3.
 2. Updating the Sequelize 'promise' to use the bluebird-style, of .then().catch(), instead of .success().error(). Per Sequelize's Official [Upgrading to 2.0 gist](https://github.com/sequelize/sequelize/wiki/Upgrading-to-2.0)
-2. Generating Angular assets to 'group by feature' instad of in separating 'views', 'scripts', and 'tests' into separate folders. For explanation see [https://www.airpair.com/angularjs/posts/top-10-mistakes-angularjs-developers-make](https://www.airpair.com/angularjs/posts/top-10-mistakes-angularjs-developers-make)
-===
+3. Generating Angular assets to 'group by feature' instad of in separating 'views', 'scripts', and 'tests' into separate folders. For explanation see [https://www.airpair.com/angularjs/posts/top-10-mistakes-angularjs-developers-make](https://www.airpair.com/angularjs/posts/top-10-mistakes-angularjs-developers-make)
+
+-------------------
 
 # The Angular-Express-Sequelize generator 
 
