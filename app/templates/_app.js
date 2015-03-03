@@ -33,6 +33,11 @@ app.put('/<%= baseName %>/<%= pluralize(entity.name) %>/:id', <%= pluralize(enti
 app.del('/<%= baseName %>/<%= pluralize(entity.name) %>/:id', <%= pluralize(entity.name) %>.destroy)
 <% }); %>
 
+app.use(function(err, req, res, next){
+  console.error(err.stack);
+  res.send(500, 'Something broke!');
+});
+
 db
   .sequelize
   .sync()
